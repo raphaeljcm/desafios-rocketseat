@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+a, li, ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  background-color: color(body-bg-color);
+}
+
+.container {
+  padding: 2.5rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}

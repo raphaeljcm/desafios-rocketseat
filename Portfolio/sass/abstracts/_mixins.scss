@@ -1,0 +1,15 @@
+@mixin flexPosition($flexDirec: row, $alignI: center, $justiCont: center) {
+  display: flex;
+  flex-direction: $flexDirec;
+  align-items: $alignI;
+  justify-content: $justiCont;
+}
+
+@mixin card($padding) {
+  padding: $padding;
+  max-width: 21.87rem;
+  background-color: color(bg-cards);
+  color: color(text-color);
+  border-radius: 1.25rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}

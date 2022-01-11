@@ -1,0 +1,56 @@
+.aside-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+
+  &-header {
+    @include flexPosition(column);
+    @include card(1.875rem);
+
+    img {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      border: 1px solid color(green-border);
+      margin-bottom: 1.87rem;
+    }
+
+    h1 {
+      font-size: size(xl);
+      margin-bottom: .62rem;
+    }
+
+    p {
+      font-size: size(sm);
+      font-weight: 300;
+    }
+  }
+
+  &-information {
+    @include card(1.875rem 2.5rem);
+    
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      &-item {
+        a {
+          color: color(text-color);
+          font-weight: 400;
+          font-size: size(sm);
+          display: flex;
+          align-items: center;
+  
+          img {
+            margin-right: 1.25rem;
+          }
+
+          &:hover {
+            color: lighten($color: color(text-color), $amount: 30%);
+          }
+        }
+      }
+    }
+  }
+}
