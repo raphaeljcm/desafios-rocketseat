@@ -5,20 +5,26 @@
   font-family: 'Merriweather Sans', sans-serif;
 }
 
-a, li, ul {
-  text-decoration: none;
-  list-style: none;
-}
-
 html {
   background-color: color(body-bg-color);
 }
 
-.container {
-  padding: 2.5rem;
-}
-
 main {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 20% 80%;
+}
+
+.container {
+  padding: 2.5rem 2.5rem 0 2.5rem;
+}
+
+h2 {
+  font-size: size(lg);
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+
+a, li, ul {
+  text-decoration: none;
+  list-style: none;
 }

@@ -1,0 +1,32 @@
+.list {
+  font-size: size(sm) - .0625rem;
+  padding: 0 2.5rem;
+
+  &-item {
+    list-style: disc;
+    margin-bottom: 1rem;
+
+    p, a {
+      font-weight: 400;
+      color: color(text-color);
+    }
+    
+    p:nth-of-type(1) {
+      font-weight: 300;
+    }
+    
+    a {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+
+      .img-external-link {
+        margin-left: .25rem;
+      }
+  
+      .img-external-link .active {
+        stroke: color(lighten($color: color(text-color), $amount: 30%));
+      }
+    }
+  }
+}

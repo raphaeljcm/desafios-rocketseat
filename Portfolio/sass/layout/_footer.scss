@@ -1,0 +1,8 @@
+.footer {
+  p {
+    color: color(text-color);
+    font-size: size(sm) + .0625;
+    @include flexPosition;
+    padding: 1.25rem 0;
+  }
+}

@@ -4,31 +4,38 @@
   box-sizing: border-box;
   font-family: 'Merriweather Sans', sans-serif; }
 
+html {
+  background-color: #22212C; }
+
+main {
+  display: grid;
+  grid-template-columns: 20% 80%; }
+
+.container {
+  padding: 2.5rem 2.5rem 0 2.5rem; }
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem; }
+
 a, li, ul {
   text-decoration: none;
   list-style: none; }
 
-html {
-  background-color: #22212C; }
-
-.container {
-  padding: 2.5rem; }
-
-main {
-  display: grid;
-  grid-template-columns: 25% 75%; }
-
 .aside-content {
   display: flex;
   flex-direction: column;
-  gap: 1.875rem; }
+  gap: 1.875rem;
+  margin-right: 2.5rem; }
   .aside-content-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 1.875rem;
-    max-width: 21.87rem;
+    box-sizing: border-box;
+    height: fit-content;
     background-color: #302F3D;
     color: #837E9F;
     border-radius: 1.25rem;
@@ -47,7 +54,8 @@ main {
       font-weight: 300; }
   .aside-content-information {
     padding: 1.875rem 2.5rem;
-    max-width: 21.87rem;
+    box-sizing: border-box;
+    height: fit-content;
     background-color: #302F3D;
     color: #837E9F;
     border-radius: 1.25rem;
@@ -61,8 +69,102 @@ main {
         font-weight: 400;
         font-size: 0.81rem;
         display: flex;
-        align-items: center; }
+        align-items: center;
+        width: fit-content; }
         .aside-content-information-list-item a img {
           margin-right: 1.25rem; }
         .aside-content-information-list-item a:hover {
           color: #d7d6e0; }
+  .aside-content-technologies {
+    padding: 1.875rem 1.25rem;
+    box-sizing: border-box;
+    height: fit-content;
+    background-color: #302F3D;
+    color: #837E9F;
+    border-radius: 1.25rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+    .aside-content-technologies-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .93rem;
+      padding: 0 .62rem; }
+  .aside-content-experiences {
+    padding: 1.875rem 1.25rem;
+    box-sizing: border-box;
+    height: fit-content;
+    background-color: #302F3D;
+    color: #837E9F;
+    border-radius: 1.25rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+  .aside-content-education {
+    padding: 1.875rem 1.25rem;
+    box-sizing: border-box;
+    height: fit-content;
+    background-color: #302F3D;
+    color: #837E9F;
+    border-radius: 1.25rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+
+.section-projects {
+  padding: 1.875rem 1.875rem;
+  box-sizing: border-box;
+  height: fit-content;
+  background-color: #302F3D;
+  color: #837E9F;
+  border-radius: 1.25rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+  .section-projects-mine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    .section-projects-mine h2 {
+      margin-bottom: 0; }
+    .section-projects-mine a {
+      color: #837E9F;
+      font-size: 0.8725rem;
+      font-weight: 400; }
+      .section-projects-mine a:hover {
+        color: #d7d6e0; }
+
+.footer p {
+  color: #837E9F;
+  font-size: 0.8725rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 0; }
+
+.tech-card {
+  width: 5.37rem;
+  height: 1.5rem;
+  color: #000;
+  background-color: #CB92B1;
+  border-radius: 1.875rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.6825rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.list {
+  font-size: 0.7475rem;
+  padding: 0 2.5rem; }
+  .list-item {
+    list-style: disc;
+    margin-bottom: 1rem; }
+    .list-item p, .list-item a {
+      font-weight: 400;
+      color: #837E9F; }
+    .list-item p:nth-of-type(1) {
+      font-weight: 300; }
+    .list-item a {
+      display: flex;
+      align-items: center;
+      width: fit-content; }
+      .list-item a .img-external-link {
+        margin-left: .25rem; }

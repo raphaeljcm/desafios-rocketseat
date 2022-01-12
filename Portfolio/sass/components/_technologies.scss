@@ -1,0 +1,12 @@
+.tech-card {
+  width: 5.37rem;
+  height: 1.5rem;
+  color: #000;
+  background-color: color(bg-techs);
+  border-radius: 1.875rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: size(xs) + .0625rem;
+  font-weight: 700;
+  @include flexPosition;
+}

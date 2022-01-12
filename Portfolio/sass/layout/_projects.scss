@@ -1,0 +1,21 @@
+.section-projects {
+  @include card(1.875rem 1.875rem);
+  
+  &-mine {
+    @include flexPosition(row, center, space-between);
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: color(text-color);
+      font-size: size(sm) + .0625rem;
+      font-weight: 400;
+
+      &:hover {
+        color: lighten($color: color(text-color), $amount: 30%);
+      }
+    }
+  }
+}

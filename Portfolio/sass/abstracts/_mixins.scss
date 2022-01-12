@@ -5,9 +5,10 @@
   justify-content: $justiCont;
 }
 
-@mixin card($padding) {
+@mixin card($padding: 1.875rem 1.25rem) {
   padding: $padding;
-  max-width: 21.87rem;
+  box-sizing: border-box;
+  height: fit-content;
   background-color: color(bg-cards);
   color: color(text-color);
   border-radius: 1.25rem;
