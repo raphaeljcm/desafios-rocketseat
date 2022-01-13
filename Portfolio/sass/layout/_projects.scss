@@ -1,6 +1,6 @@
 .section-projects {
   &-each {
-    @include flexPosition(row, center, space-between);
+    @include flexPosition(row, center, flex-start);
     flex-wrap: wrap;
     gap: 1.875rem;
     max-height: 23.43rem;
@@ -11,6 +11,7 @@
       display: flex;
       flex-direction: column;
       gap: 1.3rem;
+      width: 44rem;
 
       a {
         @include flexPosition(row, center, flex-start);
