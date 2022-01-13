@@ -1,0 +1,13 @@
+.section-heading {
+  @include flexPosition(column, stretch, flex-start);
+  gap: 1.875rem; 
+
+  &-content {
+    @include card(1.875rem 1.875rem);
+    @include flexPosition(row, center, space-between);
+
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+}

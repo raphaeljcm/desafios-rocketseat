@@ -1,20 +1,60 @@
 .section-projects {
-  @include card(1.875rem 1.875rem);
-  
-  &-mine {
+  &-each {
     @include flexPosition(row, center, space-between);
+    flex-wrap: wrap;
+    gap: 1.875rem;
+    max-height: 23.43rem;
+    overflow-y: scroll;
 
-    h2 {
-      margin-bottom: 0;
-    }
+    &-project {
+      @include card(1.875rem 1.875rem);
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
 
-    a {
-      color: color(text-color);
-      font-size: size(sm) + .0625rem;
-      font-weight: 400;
+      a {
+        @include flexPosition(row, center, flex-start);
+        gap: .8rem;
+        font-size: size(md) - .125rem;
+        font-weight: 700;
+        width: fit-content;
+      }
 
-      &:hover {
-        color: lighten($color: color(text-color), $amount: 30%);
+      p {
+        font-size: size(sm) + .0625rem;
+        font-weight: 400;
+      }
+
+      &-icons {
+        @include flexPosition(row, center, space-between);
+
+        :first-child {
+          @include flexPosition;
+          gap: .5rem;
+
+          span {
+            font-size: size(sm) + .0625rem;
+            font-weight: 400;
+          }
+        }
+
+        :last-child {
+          @include flexPosition;
+          gap: .5rem;
+
+          .circle {
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background-color: yellow;
+            border: 2px solid color(text-color);
+          }
+
+          span {
+            font-size: size(sm) + .0625rem;
+            font-weight: 400;
+          }
+        }
       }
     }
   }

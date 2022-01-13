@@ -11,7 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <script src="./script.js" defer></script>
+  <script src="./scripts/script.js" defer></script>
+  <script src="./scripts/github-api.js" defer></script>
 
   <title>Desafio - Portfolio</title>
 </head>
@@ -19,7 +20,7 @@
   <main class="container">
     <aside class="aside-content">
       <div class="aside-content-header ">  
-        <img src="./assets/profile.png" alt="Profile Picture">
+        <img src="./assets/profile.png" alt="Profile Picture" class="img">
         <h1>Raphael Marques</h1>
         <p>Front End Developer</p>
       </div>
@@ -106,22 +107,125 @@
         </ul>
       </div>
     </aside>
-    <section class="section-projects">
-      <div class="section-projects-mine">
-        <h2>My Projects</h2>
-        <a href="#">Veja todos</a>
-      </div>
-      <div class="section-projects-each">
-        
-      </div>
-    </section>
-    <section class="section-posts">
-      <div class=""></div>
-      <div class=""></div>
-    </section>
+
+    <div class="wrapper-main-content">
+      <section class="section-projects section-heading">
+        <div class="section-projects section-heading-content">
+          <h2>My Projects</h2>
+          <a href="#">Veja todos</a>
+        </div>
+        <div class="section-projects-each">
+          <div class="section-projects-each-project">
+            <a href="#"><img src="./assets/folder.svg" alt="Folder icon"> my-onix</a>
+            <p>Consulte os códigos de erro que aparecem no painel do veículo Onix.</p>
+            <div class="section-projects-each-project-icons">
+              <div>
+                <img src="./assets/star.svg" alt="Star Icon">
+                <span>100</span>
+                <img src="./assets/git-branch.svg" alt="Git branch icon">
+                <span>100</span>
+              </div>
+              <div class="section-projects-each-project-icons-tech">
+                <div class="circle"></div>
+                <span>Javascript</span>
+              </div>
+            </div>
+          </div>
+          <div class="section-projects-each-project">
+            <a href="#"><img src="./assets/folder.svg" alt="Folder icon"> my-onix</a>
+            <p>Consulte os códigos de erro que aparecem no painel do veículo Onix.</p>
+            <div class="section-projects-each-project-icons">
+              <div>
+                <img src="./assets/star.svg" alt="Star Icon">
+                <span>100</span>
+                <img src="./assets/git-branch.svg" alt="Git branch icon">
+                <span>100</span>
+              </div>
+              <div class="section-projects-each-project-icons-tech">
+                <div class="circle"></div>
+                <span>Javascript</span>
+              </div>
+            </div>
+          </div>
+          <div class="section-projects-each-project">
+            <a href="#"><img src="./assets/folder.svg" alt="Folder icon"> my-onix</a>
+            <p>Consulte os códigos de erro que aparecem no painel do veículo Onix.</p>
+            <div class="section-projects-each-project-icons">
+              <div>
+                <img src="./assets/star.svg" alt="Star Icon">
+                <span>100</span>
+                <img src="./assets/git-branch.svg" alt="Git branch icon">
+                <span>100</span>
+              </div>
+              <div class="section-projects-each-project-icons-tech">
+                <div class="circle"></div>
+                <span>Javascript</span>
+              </div>
+            </div>
+          </div>
+          <div class="section-projects-each-project">
+            <a href="#"><img src="./assets/folder.svg" alt="Folder icon"> my-onix</a>
+            <p>Consulte os códigos de erro que aparecem no painel do veículo Onix.</p>
+            <div class="section-projects-each-project-icons">
+              <div>
+                <img src="./assets/star.svg" alt="Star Icon">
+                <span>100</span>
+                <img src="./assets/git-branch.svg" alt="Git branch icon">
+                <span>100</span>
+              </div>
+              <div class="section-projects-each-project-icons-tech">
+                <div class="circle"></div>
+                <span>Javascript</span>
+              </div>
+            </div>
+          </div>
+          <div class="section-projects-each-project">
+            <a href="#"><img src="./assets/folder.svg" alt="Folder icon"> my-onix</a>
+            <p>Consulte os códigos de erro que aparecem no painel do veículo Onix.</p>
+            <div class="section-projects-each-project-icons">
+              <div>
+                <img src="./assets/star.svg" alt="Star Icon">
+                <span>100</span>
+                <img src="./assets/git-branch.svg" alt="Git branch icon">
+                <span>100</span>
+              </div>
+              <div class="section-projects-each-project-icons-tech">
+                <div class="circle"></div>
+                <span>Javascript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="section-posts section-heading">
+        <div class="section-posts section-heading-content">
+          <h2>Recent Posts</h2>
+        </div>
+        <div class="section-posts-wrapper">
+          <div class="section-posts-wrapper-each">
+            <img src="./assets/profile.png" alt="Profile Picture" class="img">
+            <div class="section-posts-wrapper-each-content">
+              <div class="section-posts-wrapper-each-content-heading">
+                <p>Erro adb devices no Genymotion e Android Studio (React Native)</p>
+                <span>2 anos atrás</span>
+              </div>
+              <div class="section-posts-wrapper-each-content-footer">
+                <p>Erro adb devices no Genymotion e Android Studio (React Native)</p>
+                <span>#react-native</span>
+                <span>#genimotion</span>
+                <span>#js</span>
+                <span>#html</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
   </main>
   <footer class="footer">
-    <p>Feito com 💜 por Raphael Marques</p>
+    <p>Feito com 💜 por<span>Raphael Marques</span></p>
   </footer>
 </body>
 </html>

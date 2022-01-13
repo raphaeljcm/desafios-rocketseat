@@ -5,4 +5,13 @@
     @include flexPosition;
     padding: 1.25rem 0;
   }
+
+  span {
+    margin-left: .3rem;
+    transform: translateY(+1px);
+  }
+
+  span:hover {
+    color: lighten($color: color(text-color), $amount: 30%);;
+  }
 }

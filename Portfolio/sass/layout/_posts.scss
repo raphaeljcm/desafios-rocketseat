@@ -1,0 +1,46 @@
+.section-posts {
+  &-wrapper {
+    @include card(1.875rem 1.875rem);
+
+    &-each {
+      display: flex;
+      gap: 1.25rem;
+
+      .img {
+        border: none;
+        margin-bottom: 0;
+      }
+
+      &-content {
+        @include flexPosition(column, flex-start, space-between);
+
+        &-heading {
+          p {
+            font-weight: 700;
+            font-size: size(md);
+            margin-bottom: .5rem;
+          }
+
+          span {
+            font-weight: 400;
+            font-size: size(sm) + .0625rem;
+          }
+        }
+
+        &-footer {
+          p {
+            font-weight: 400;
+            font-size: size(md) - .125rem;
+            margin-bottom: .5rem;
+          }
+
+          span {
+            margin-right: 1rem;
+            font-weight: 400;
+            font-size: size(sm) + .0625rem;
+          }
+        }
+      }
+    }
+  }
+}
