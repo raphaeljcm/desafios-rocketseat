@@ -4,28 +4,99 @@
   gap: 1.875rem;
   margin-right: 2.5rem;
 
+  @include responsive(sm) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+
+  @include responsive(xm) {
+    position: relative;
+  }
+
   &-header {
     @include flexPosition(column);
     @include card(1.875rem);
 
+    @include responsive(sm) {
+      flex-direction: row;
+      height: 25rem;
+      width: 95rem;
+    }
+
+    &-description {
+      text-align: center;
+
+      @include responsive(sm) {
+        margin-left: 2rem;
+      }
+    }
+
+    img {
+      @include responsive(sm) {
+        width: 16rem;
+        height: 16rem;
+      }
+
+      @include responsive(xm) {
+        width: 14rem;
+        height: 14rem;
+      }
+    }
+
     h1 {
       font-size: size(xl);
       margin-bottom: .62rem;
+
+      @include responsive(sm) {
+        font-size: size(xl) * 3;
+      }
+
+      @include responsive(xm) {
+        font-size: size(xl) * 2;
+      }
     }
 
     p {
       font-size: size(sm);
       font-weight: 300;
+
+      @include responsive(sm) {
+        font-size: size(xl) + 1rem;
+      }
+
+      @include responsive(xm) {
+        font-size: size(lg);
+      }
     }
   }
 
   &-information {
     @include card(1.875rem 2.5rem);
-    
+
+    @include responsive(sm) {
+      width: 100%;
+    }
+
+    @include responsive(xm) {
+      width: fit-content;
+    }
+
     &-list {
       display: flex;
       flex-direction: column;
       gap: 1rem;
+
+      @include responsive(sm) {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      @include responsive(xm) {
+        flex-direction: column;
+        justify-content: stretch;
+      }
 
       &-item {
         a {
@@ -33,9 +104,17 @@
           display: flex;
           align-items: center;
           width: fit-content;
+
+          @include responsive(xl) {
+            word-break: break-all;
+          }
   
           img {
             margin-right: 1.25rem;
+
+            @include responsive(xl) {
+              margin-right: .8rem;
+            }
           }
         }
       }
@@ -51,22 +130,68 @@
       gap: .93rem;
       padding: 0 .62rem;
     }
+
+    @include responsive(xm) {
+      width: 60%;
+    }
   }
 
   &-experiences {
     @include card;
+
+    @include responsive(xm) {
+      width: 25%;
+      position: absolute;
+      left: 22.5rem;
+      top: 39rem;
+    }
+
+    .list {
+      @extend %restrictScroll;
+
+      @include responsive(sm) {
+        max-height: 6rem;
+      }
+
+      @include responsive(xm) {
+        max-height: 2rem;
+      }
+    }
   }
 
   &-education {
     @include card;
 
-    .list-item {
-      a:hover {
-        color: color(text-color);
-        cursor: auto;
+    @include responsive(xm) {
+      width: 30%;
+    }
 
-        img:hover {
-          cursor: pointer;
+    @include responsive(xm) {
+      width: 30%;
+      position: absolute;
+      left: 40rem;
+      top: 39rem;
+    }
+
+    .list {
+      @extend %restrictScroll;
+
+      @include responsive(sm) {
+        max-height: 6rem;
+      }
+
+      @include responsive(xm) {
+        max-height: 2rem;
+      }
+
+      .list-item {
+        a:hover {
+          color: color(text-color);
+          cursor: auto;
+  
+          img:hover {
+            cursor: pointer;
+          }
         }
       }
     }

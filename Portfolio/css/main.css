@@ -1,3 +1,11 @@
+.aside-content-experiences .list, .aside-content-education .list {
+  max-height: 20rem;
+  overflow-y: scroll; }
+  .aside-content-experiences .list::-webkit-scrollbar-track, .aside-content-education .list::-webkit-scrollbar-track {
+    background: #302F3D; }
+  .aside-content-experiences .list::-webkit-scrollbar, .aside-content-education .list::-webkit-scrollbar {
+    width: .4rem; }
+
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +25,18 @@
 html {
   background-color: #22212C;
   scroll-behavior: smooth; }
+  @media (max-width: 1440px) {
+    html {
+      font-size: 87.5%; } }
+  @media (max-width: 1200px) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 1000px) {
+    html {
+      font-size: 62.5%; } }
+  @media (max-width: 760px) {
+    html {
+      font-size: 50%; } }
 
 body {
   -webkit-font-smoothing: antialiased; }
@@ -24,6 +44,9 @@ body {
 main {
   display: grid;
   grid-template-columns: 20% 80%; }
+  @media (max-width: 760px) {
+    main {
+      grid-template-columns: 100%; } }
 
 .container {
   padding: 2.5rem 2.5rem 0 2.5rem; }
@@ -50,11 +73,25 @@ a {
 a:hover {
   color: #d7d6e0; }
 
+@media (max-width: 760px) {
+  img {
+    width: 1.5rem;
+    height: 1.5rem; } }
+
 .aside-content {
   display: flex;
   flex-direction: column;
   gap: 1.875rem;
   margin-right: 2.5rem; }
+  @media (max-width: 760px) {
+    .aside-content {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+      margin-right: 0; } }
+  @media (max-width: 560px) {
+    .aside-content {
+      position: relative; } }
   .aside-content-header {
     display: flex;
     flex-direction: column;
@@ -67,12 +104,42 @@ a:hover {
     color: #837E9F;
     border-radius: 1.25rem;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+    @media (max-width: 760px) {
+      .aside-content-header {
+        flex-direction: row;
+        height: 25rem;
+        width: 95rem; } }
+    .aside-content-header-description {
+      text-align: center; }
+      @media (max-width: 760px) {
+        .aside-content-header-description {
+          margin-left: 2rem; } }
+    @media (max-width: 760px) {
+      .aside-content-header img {
+        width: 16rem;
+        height: 16rem; } }
+    @media (max-width: 560px) {
+      .aside-content-header img {
+        width: 14rem;
+        height: 14rem; } }
     .aside-content-header h1 {
       font-size: 1.43rem;
       margin-bottom: .62rem; }
+      @media (max-width: 760px) {
+        .aside-content-header h1 {
+          font-size: 4.29rem; } }
+      @media (max-width: 560px) {
+        .aside-content-header h1 {
+          font-size: 2.86rem; } }
     .aside-content-header p {
       font-size: 0.81rem;
       font-weight: 300; }
+      @media (max-width: 760px) {
+        .aside-content-header p {
+          font-size: 2.43rem; } }
+      @media (max-width: 560px) {
+        .aside-content-header p {
+          font-size: 1.25rem; } }
   .aside-content-information {
     padding: 1.875rem 2.5rem;
     box-sizing: border-box;
@@ -81,17 +148,37 @@ a:hover {
     color: #837E9F;
     border-radius: 1.25rem;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+    @media (max-width: 760px) {
+      .aside-content-information {
+        width: 100%; } }
+    @media (max-width: 560px) {
+      .aside-content-information {
+        width: fit-content; } }
     .aside-content-information-list {
       display: flex;
       flex-direction: column;
       gap: 1rem; }
+      @media (max-width: 760px) {
+        .aside-content-information-list {
+          flex-direction: row;
+          justify-content: space-around; } }
+      @media (max-width: 560px) {
+        .aside-content-information-list {
+          flex-direction: column;
+          justify-content: stretch; } }
       .aside-content-information-list-item a {
         font-size: 0.81rem;
         display: flex;
         align-items: center;
         width: fit-content; }
+        @media (max-width: 1440px) {
+          .aside-content-information-list-item a {
+            word-break: break-all; } }
         .aside-content-information-list-item a img {
           margin-right: 1.25rem; }
+          @media (max-width: 1440px) {
+            .aside-content-information-list-item a img {
+              margin-right: .8rem; } }
   .aside-content-technologies {
     padding: 1.875rem 1.25rem;
     box-sizing: border-box;
@@ -105,6 +192,9 @@ a:hover {
       flex-wrap: wrap;
       gap: .93rem;
       padding: 0 .62rem; }
+    @media (max-width: 560px) {
+      .aside-content-technologies {
+        width: 60%; } }
   .aside-content-experiences {
     padding: 1.875rem 1.25rem;
     box-sizing: border-box;
@@ -113,6 +203,18 @@ a:hover {
     color: #837E9F;
     border-radius: 1.25rem;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+    @media (max-width: 560px) {
+      .aside-content-experiences {
+        width: 25%;
+        position: absolute;
+        left: 22.5rem;
+        top: 39rem; } }
+    @media (max-width: 760px) {
+      .aside-content-experiences .list {
+        max-height: 6rem; } }
+    @media (max-width: 560px) {
+      .aside-content-experiences .list {
+        max-height: 2rem; } }
   .aside-content-education {
     padding: 1.875rem 1.25rem;
     box-sizing: border-box;
@@ -121,10 +223,25 @@ a:hover {
     color: #837E9F;
     border-radius: 1.25rem;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
-    .aside-content-education .list-item a:hover {
+    @media (max-width: 560px) {
+      .aside-content-education {
+        width: 30%; } }
+    @media (max-width: 560px) {
+      .aside-content-education {
+        width: 30%;
+        position: absolute;
+        left: 40rem;
+        top: 39rem; } }
+    @media (max-width: 760px) {
+      .aside-content-education .list {
+        max-height: 6rem; } }
+    @media (max-width: 560px) {
+      .aside-content-education .list {
+        max-height: 2rem; } }
+    .aside-content-education .list .list-item a:hover {
       color: #837E9F;
       cursor: auto; }
-      .aside-content-education .list-item a:hover img:hover {
+      .aside-content-education .list .list-item a:hover img:hover {
         cursor: pointer; }
 
 .section-projects-each {
@@ -148,6 +265,15 @@ a:hover {
     flex-direction: column;
     gap: 1.3rem;
     width: 44rem; }
+    @media (max-width: 1440px) {
+      .section-projects-each-project {
+        width: 37.5rem; } }
+    @media (max-width: 1200px) {
+      .section-projects-each-project {
+        width: 36rem; } }
+    @media (max-width: 560px) {
+      .section-projects-each-project {
+        width: 30rem; } }
     .section-projects-each-project a {
       display: flex;
       flex-direction: row;

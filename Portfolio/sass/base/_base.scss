@@ -21,6 +21,19 @@
 html {
   background-color: color(body-bg-color);
   scroll-behavior: smooth;
+
+  @include responsive(xl) {
+    font-size: 87.5%;
+  }
+  @include responsive(lg) {
+    font-size: 75%;
+  }
+  @include responsive(md) {
+    font-size: 62.5%;
+  }
+  @include responsive(sm) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -30,6 +43,10 @@ body {
 main {
   display: grid;
   grid-template-columns: 20% 80%;
+
+  @include responsive(sm) {
+    grid-template-columns: 100%;
+  }
 }
 
 .container {
@@ -61,4 +78,11 @@ a {
 
 a:hover {
   color: lighten($color: color(text-color), $amount: 30%);
+}
+
+img {
+  @include responsive(sm) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }

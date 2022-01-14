@@ -14,3 +14,35 @@
   border-radius: 1.25rem;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+@mixin responsive($breakpoint) {
+  @if($breakpoint == xl) {
+    @media(max-width: 1440px) {
+      @content;
+    }
+  }
+
+  @if($breakpoint == lg) {
+    @media(max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if($breakpoint == md) {
+    @media(max-width: 1000px) {
+      @content;
+    }
+  }
+
+  @if($breakpoint == sm) {
+    @media(max-width: 760px) {
+      @content;
+    }
+  }
+
+  @if($breakpoint == xm) {
+    @media(max-width: 560px) {
+      @content;
+    }
+  }
+}

@@ -13,6 +13,18 @@
       gap: 1.3rem;
       width: 44rem;
 
+      @include responsive(xl) {
+        width: 37.5rem;
+      }
+
+      @include responsive(lg) {
+        width: 36rem;
+      }
+
+      @include responsive(xm) {
+        width: 30rem;
+      }
+
       a {
         @include flexPosition(row, center, flex-start);
         gap: .8rem;

@@ -1,0 +1,11 @@
+%restrictScroll {
+  max-height: 20rem;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar-track {
+    background: color(bg-cards);
+  }
+  &::-webkit-scrollbar {
+    width: .4rem;
+  }
+}
