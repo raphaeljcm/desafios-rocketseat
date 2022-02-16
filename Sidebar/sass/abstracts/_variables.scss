@@ -1,0 +1,20 @@
+$colors: (
+  body-bg-color: #dce4e3,
+  green-bg: #18c29c,
+  light-green: #8ed7c6,
+	light-grey: #dce4e3,
+  text-color: #084236,
+);
+
+$font-sizes: (
+  lg: 1.66rem, // 25px
+  sm: .8rem // 12px
+);
+
+@function color($color-name) {
+  @return map-get($map: $colors, $key: $color-name);
+}
+
+@function size($size) {
+  @return map-get($map: $font-sizes, $key: $size);
+}

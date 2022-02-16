@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
+
+html {
+  font-size: 93.75%; }
+
+body {
+  -webkit-font-smoothing: antialiased; }
+
+main {
+  display: flex; }
+
+a, li, ul {
+  list-style: none;
+  text-decoration: none; }
+
+section.nav-bar {
+  width: 16.66rem; }

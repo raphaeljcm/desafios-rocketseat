@@ -1,0 +1,12 @@
+{
+  "name": "sidebar-project",
+  "version": "1.0.0",
+  "description": "A project by Rocketseat to practice a little bit of html, sass and javascript",
+  "main": "main.js",
+  "scripts": {
+    "watch": "node-sass ./sass/main.scss ./style.css -w"
+  },
+  "keywords": [],
+  "author": "Raphael Marques",
+  "license": "ISC"
+}
