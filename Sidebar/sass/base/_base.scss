@@ -14,7 +14,9 @@ body {
 }
 
 main {
-  display: flex;
+  display: grid;
+  grid-template-columns: 16.66rem auto;
+  color: color(text-color);
 }
 
 a, li, ul {

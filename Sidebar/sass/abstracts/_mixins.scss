@@ -1,0 +1,10 @@
+@mixin container($padding-horizontal: 1.6rem, $padding-vertical: .93rem)  { 
+  padding: $padding-horizontal $padding-vertical;
+}
+
+@mixin flexPosition($flexDirec: row, $alignI: center, $justiCont: center) {
+  display: flex;
+  flex-direction: $flexDirec;
+  align-items: $alignI;
+  justify-content: $justiCont;
+}

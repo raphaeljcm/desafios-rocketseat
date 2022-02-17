@@ -1,0 +1,10 @@
+section.dashboard {
+  @include container(1.2rem, 1.2rem);
+  background-color: color(body-bg-color);
+  width: 100%;
+
+  h1 {
+    font-weight: 500;
+    font-size: size(lg);
+  }
+}

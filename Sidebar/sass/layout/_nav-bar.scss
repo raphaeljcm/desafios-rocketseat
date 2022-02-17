@@ -1,3 +1,63 @@
 section.nav-bar {
-  width: 16.66rem; // workaround to make min css function works on sass
+  max-width: 16.66rem; 
+  @include container;
+  background-color: color(green-bg);
+  height: 100vh;
+
+  header {
+    @include flexPosition(row, center, space-between);
+
+    p {
+      display: flex;
+      align-items: center;
+      column-gap: .33rem;
+      margin-left: 1rem;
+      font-weight: 500;
+    }
+
+    .toggle-button {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+
+  .search {
+    margin-top: 1.8rem;
+    @include flexPosition(row, center, flex-start);
+    background-color: color(light-green);
+    padding: .86rem;
+    border-radius: .8rem;
+
+    input {
+      outline: none;
+      border: none;
+      background: url("./images/search.svg") no-repeat left center;
+      padding-left: 2rem;
+    }
+  }
+
+  nav {
+    @include flexPosition(column, flex-start, center);
+    @include container;
+    margin-top: 1.33rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.33rem;
+
+      li a {
+        display: flex;
+        align-items: center;
+        column-gap: .86rem;
+        color: color(text-color);
+        transition: color .3s;
+
+        &:hover {
+          color: lighten($color: color(text-color), $amount: 15%);
+        }
+      }
+    }
+  }
 }
