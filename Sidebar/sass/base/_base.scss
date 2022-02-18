@@ -5,12 +5,14 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
 html {
   font-size: 93.75%; // 15px
 }
 
 body {
   -webkit-font-smoothing: antialiased;
+  background-color: color(green-bg);
 }
 
 main {

@@ -17,28 +17,42 @@
 <body>
   <main>
     <section class="nav-bar">
-      <header>
-        <p>
-          <img src="./images/pet.svg" alt="Vet image">
-          VET.
-        </p>
-        <div class="toggle-button">
-          <img src="./images/menu.svg" alt="Toggle button img">
+      <div class="nav-bar-header">
+        <header>
+          <p>
+            <img src="./images/pet.svg" alt="Vet image">
+            VET.
+          </p>
+          <div class="toggle-button">
+            <img src="./images/menu.svg" alt="Toggle button img">
+          </div>
+        </header>
+        <div class="search">
+          <input type="search" placeholder="Search">
         </div>
-      </header>
-      <div class="search">
-        <input type="search" placeholder="Search">
+        <nav>
+          <ul>
+            <li><a href="#"><img src="./images/grid.svg" alt="dashboard icon"><span>Dashboard</span></a></li>
+            <li><a href="#"><img src="./images/pet.svg" alt="pet icon"><span>Pets</span></a></li>
+            <li><a href="#"><img src="./images/user.svg" alt="user icon"><span>Clients</span></a></li>
+            <li><a href="#"><img src="./images/vet.svg" alt="vet icon"><span>Vets</span></a></li>
+            <li><a href="#"><img src="./images/search.svg" alt="setting icon"><span>Settings</span></a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#"><img src="./images/grid.svg" alt="dashboard icon">Dashboard</a></li>
-          <li><a href="#"><img src="./images/pet.svg" alt="pet icon">Pets</a></li>
-          <li><a href="#"><img src="./images/user.svg" alt="user icon">Clients</a></li>
-          <li><a href="#"><img src="./images/vet.svg" alt="vet icon">Vets</a></li>
-          <li><a href="#"><img src="./images/search.svg" alt="setting icon">Settings</a></li>
-        </ul>
-      </nav>
-      <footer>
+      <footer class="footer">
+        <div class="footer-wrapper">
+          <div class="footer-description">
+            <img src="./images/avatar.png" alt="user photo">
+            <div class="footer-description-user">
+              <h2>Eleanor Pena</h2>
+              <p>Veterinária</p>
+            </div>
+          </div>
+          <div class="footer-logout-button">
+            <img src="./images/log-out.svg" alt="log-out image">
+          </div>
+        </div>
       </footer>
     </section>  
     <section class="dashboard">
