@@ -12,8 +12,7 @@ body {
   background-color: #18c29c; }
 
 main {
-  display: grid;
-  grid-template-columns: 16.66rem auto;
+  display: flex;
   color: #084236; }
 
 a, li, ul {
@@ -134,6 +133,12 @@ main.active {
       justify-content: center; }
       main.active .nav-bar .footer-description {
         display: none; }
+
+.search.active {
+  position: relative;
+  z-index: 1;
+  width: 15rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; }
 
 section.dashboard {
   padding: 1.2rem 1.2rem;

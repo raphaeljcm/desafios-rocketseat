@@ -1,0 +1,12 @@
+{
+  "name": "countdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "watch": "node-sass ./sass/main.scss ./style.css -w"
+  },
+  "keywords": [],
+  "author": "Raphael Marques",
+  "license": "ISC"
+}

@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25rem;
+    align-items: center;
+
+    h1 {
+      font-weight: bold;
+      font-size: size(lg);
+      color: color(purple);
+      letter-spacing: .105em;
+    }
+
+    &-counter {
+      font-size: size(xl);
+      color: color(black);
+      display: flex;
+      text-align: center;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: size(sm);
+      color: color(text-color);
+    }
+
+    button {
+      width: 10rem;
+      height: 2.87rem;
+      border-radius: .62rem;
+      background-color: color(purple);
+      color: #FFF;
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      cursor: pointer;
+      transition: transform .3s;
+    }
+
+    button:active {
+      transform: translateY(.3rem);
+    }
+  }
+}

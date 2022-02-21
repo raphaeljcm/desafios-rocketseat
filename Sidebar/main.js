@@ -8,11 +8,16 @@ function menuToggle() {
     main.classList.toggle('active');
   });
 
-  // try to solve this tomorrow
-  // searchInput.addEventListener('focus', () => {
-  //   console.log('op', searchDiv)
-  //   searchDiv.style.width = '14.8rem';
-  // });
+  searchInput.addEventListener('focus', () => {
+    if(main.classList.contains('active')) {
+      searchDiv.classList.toggle('active');
+    } 
+  });
+
+  searchInput.addEventListener('focusout', () => {
+    searchDiv.classList.remove('active');
+    searchDiv.children[0].value = "";
+  });
 }
 
 menuToggle();

@@ -118,7 +118,6 @@
   }
 }
 // active class
-
 main.active {
   grid-template-columns: 5.2rem auto;
 
@@ -165,4 +164,12 @@ main.active {
       }
     }
   }
+}
+
+// input search focus active
+.search.active {
+  position: relative;
+  z-index: 1;
+  width: 15rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }

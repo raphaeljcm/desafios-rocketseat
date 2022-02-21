@@ -1,0 +1,21 @@
+$colors: (
+  black: #4D4C59,
+  purple: #6C63FF,
+	light-grey: #C8C8C8,
+  text-color: #9C9AB6,
+);
+
+$font-sizes: (
+  xl: 4.5rem, // 72px
+  lg: 2.25rem, // 36px
+  md: 1rem, // 16px
+  sm: .87rem  // 14px
+);
+
+@function color($color-name) {
+  @return map-get($map: $colors, $key: $color-name);
+}
+
+@function size($size) {
+  @return map-get($map: $font-sizes, $key: $size);
+}

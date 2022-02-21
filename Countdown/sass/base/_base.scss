@@ -6,18 +6,20 @@
   font-family: 'Poppins', sans-serif;
 }
 
-html {
-  font-size: 93.75%; // 15px
-}
-
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: color(green-bg);
 }
 
 main {
+  height: 100vh;
   display: flex;
-  color: color(text-color);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    align-self: flex-start;
+  }
 }
 
 a, li, ul {
