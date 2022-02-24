@@ -1,0 +1,11 @@
+@keyframes takeoff-rocket {
+  0% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-2000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

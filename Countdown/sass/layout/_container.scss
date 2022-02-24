@@ -29,21 +29,5 @@
       font-size: size(sm);
       color: color(text-color);
     }
-
-    button {
-      width: 10rem;
-      height: 2.87rem;
-      border-radius: .62rem;
-      background-color: color(purple);
-      color: #FFF;
-      border: none;
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-      cursor: pointer;
-      transition: transform .3s;
-    }
-
-    button:active {
-      transform: translateY(.3rem);
-    }
   }
 }

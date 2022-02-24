@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <script defer src="./scripts/form.js"></script>
   <script defer src="./scripts/main.js"></script>
 
   <title>Coming Soon</title>
@@ -19,7 +18,7 @@
   <main>
      <img src="./images/top-image.svg" alt="top image">
      <div class="container">
-       <section class="description">
+       <section id="description" class="description">
          <h1>READY TO LAUNCH IN...</h1>
          <div class="description-counter">
           <div class="description-counter-day">
@@ -40,9 +39,9 @@
           </div>
          </div>
          <p>Subscribe to know more about the launch</p>
-         <button type="submit" onclick="modal()">Subscribe</button>
+         <button class="submit" type="submit" onclick="modal()">Subscribe</button>
        </section>
-       <section class="rocket">
+       <section class="rocket" id="rocket">
          <img src="./images/rocket.svg" alt="rocket image">
        </section>
      </div>
@@ -55,14 +54,14 @@
         <h2>Set up your counter:</h2>
         <form action="">
           <div class="input-group">
-            <input type="text" name="name" id="name" placeholder="Type the event's name">
-            <label for="date">Type the date of the event</label>
-            <input type="datetime" name="date" id="date" placeholder="Mar 25, 2000 20:30">
+            <input aria-label="Type the event's name" type="text" name="name" id="name" placeholder="Type the event's name">
+            <input aria-label="Choose the date of the event" type="datetime-local" name="date" id="date">
+            <span class="warning"></span>
           </div>
 
           <div class="input-group actions">
-            <a href="#" class="button cancel" onclick="cleanElements()">Cancel</a>
-            <button class="save" type="submit">Start</button>
+            <a href="#" class="button cancel" onclick="Form.cancelButton()">Cancel</a>
+            <button class="save" type="submit">START</button>
           </div>
         </form>
       </div>

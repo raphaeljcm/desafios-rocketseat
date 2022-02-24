@@ -1,0 +1,38 @@
+#form {
+  h2 {
+    margin-top: 0;
+  }
+  
+  form {
+    .input-group {
+      margin-top: .8rem;
+  
+      input {
+        border: none;
+        border-radius: .2rem;
+        padding: .8rem;
+        width: 100%;
+        outline-color: color(purple);
+        margin-bottom: .7rem;
+      }
+
+      .warning {
+        color: color(red);
+        font-size: size(sm);
+        opacity: .5;
+        display: none;
+      }
+    }
+
+    .input-group.actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .button,
+      button.save {
+        width: 48%;
+      }
+    }
+  }
+}
