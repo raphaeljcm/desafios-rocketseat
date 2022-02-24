@@ -80,8 +80,6 @@ function countdownStart(name, date) {
   const countdownDate = date.getTime();
   
   const startcounter = setInterval(function() {
-    clearInterval(startcounter);
-
     const now = new Date().getTime();
     const timeleft = countdownDate - now;
     
