@@ -20,7 +20,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  box-sizing: border-box; }
   main img {
     align-self: flex-start; }
 
@@ -53,7 +54,7 @@ button.save:hover {
 .button.cancel:hover {
   opacity: 1; }
 
-button.submit {
+button.open-modal {
   width: 10rem;
   height: 2.87rem;
   border-radius: .62rem;
@@ -64,7 +65,7 @@ button.submit {
   cursor: pointer;
   transition: transform .3s; }
 
-button.submit:active {
+button.open-modal:active {
   transform: translateY(0.3rem); }
 
 .container {
@@ -116,6 +117,15 @@ button.submit:active {
 #form h2 {
   margin-top: 0; }
 
+#form form .reset-counter {
+  display: flex;
+  justify-content: flex-end; }
+  #form form .reset-counter a {
+    color: #C8C8C8;
+    font-size: 0.87rem; }
+    #form form .reset-counter a:hover {
+      color: #afafaf; }
+
 #form form .input-group {
   margin-top: .8rem; }
   #form form .input-group input {
@@ -136,7 +146,8 @@ button.submit:active {
   justify-content: space-between;
   align-items: center; }
   #form form .input-group.actions .button,
-  #form form .input-group.actions button.save {
+  #form form .input-group.actions button.save,
+  #form form .input-group.actions button#reset {
     width: 48%; }
 
 .rocket.active {

@@ -39,7 +39,7 @@
           </div>
          </div>
          <p>Subscribe to know more about the launch</p>
-         <button class="submit" type="submit" onclick="modal()">Subscribe</button>
+         <button class="open-modal" type="button" onclick="modal()">Subscribe</button>
        </section>
        <section class="rocket" id="rocket">
          <img src="./images/rocket.svg" alt="rocket image">
@@ -57,6 +57,10 @@
             <input aria-label="Type the event's name" type="text" name="name" id="name" placeholder="Type the event's name">
             <input aria-label="Choose the date of the event" type="datetime-local" name="date" id="date">
             <span class="warning"></span>
+          </div>
+
+          <div class="reset-counter">
+            <a href="#" class="button reset" id="reset">Reset the current counter</a>
           </div>
 
           <div class="input-group actions">

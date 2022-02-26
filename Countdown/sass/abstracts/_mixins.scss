@@ -4,3 +4,35 @@
   align-items: $alignI;
   justify-content: $justiCont;
 }
+
+@mixin responsive($breakpoint) {
+  @if($breakpoint == xl) {
+    @media(max-width: 1440px) {
+      @content;
+    }
+  }
+
+  @if($breakpoint == lg) {
+    @media(max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if($breakpoint == md) {
+    @media(max-width: 1000px) {
+      @content;
+    }
+  }
+
+  @if($breakpoint == sm) {
+    @media(max-width: 760px) {
+      @content;
+    }
+  }
+
+  @if($breakpoint == xm) {
+    @media(max-width: 560px) {
+      @content;
+    }
+  }
+}

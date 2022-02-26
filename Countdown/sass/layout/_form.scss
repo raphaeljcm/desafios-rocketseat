@@ -4,6 +4,20 @@
   }
   
   form {
+    .reset-counter {
+      display: flex;
+      justify-content: flex-end;
+
+      a {
+        color: color(light-grey);
+        font-size: size(sm);
+
+        &:hover {
+          color: darken($color: color(light-grey), $amount: 10%);
+        }
+      }
+    }
+
     .input-group {
       margin-top: .8rem;
   
@@ -30,7 +44,8 @@
       align-items: center;
 
       .button,
-      button.save {
+      button.save,
+      button#reset {
         width: 48%;
       }
     }

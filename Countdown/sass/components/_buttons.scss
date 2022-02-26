@@ -25,7 +25,7 @@ button.save:hover {
 .button.cancel:hover {
   opacity: 1;
 }
-button.submit {
+button.open-modal {
   width: 10rem;
   height: 2.87rem;
   border-radius: .62rem;
@@ -37,6 +37,6 @@ button.submit {
   transition: transform .3s;
 }
 
-button.submit:active {
+button.open-modal:active {
   transform: translateY(.3rem);
 }

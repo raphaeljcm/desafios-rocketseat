@@ -16,6 +16,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 
   img {
     align-self: flex-start;
