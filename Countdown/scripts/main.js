@@ -166,8 +166,3 @@ function init() {
 }
 
 init();
-
-// To do list:
-/*
-  store the current time with localstorage
-*/

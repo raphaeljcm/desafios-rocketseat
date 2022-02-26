@@ -21,9 +21,10 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box; }
+  overflow: hidden; }
   main img {
-    align-self: flex-start; }
+    align-self: flex-start;
+    width: 100%; }
 
 a, li, ul {
   list-style: none;
@@ -73,6 +74,9 @@ button.open-modal:active {
   justify-content: space-around;
   align-items: center;
   width: 100vw; }
+  @media (max-width: 1150px) {
+    .container {
+      width: 90vw; } }
   .container .description {
     display: flex;
     flex-direction: column;
@@ -83,15 +87,45 @@ button.open-modal:active {
       font-size: 2.25rem;
       color: #6C63FF;
       letter-spacing: .105em; }
+      @media (max-width: 1150px) {
+        .container .description h1 {
+          font-size: 1.62rem; } }
+      @media (max-width: 1050px) {
+        .container .description h1 {
+          font-size: 1.40rem; } }
+      @media (max-width: 1000px) {
+        .container .description h1 {
+          font-size: 1.62rem; } }
+      @media (max-width: 560px) {
+        .container .description h1 {
+          font-size: 1.30rem; } }
     .container .description-counter {
       font-size: 4.5rem;
       color: #4D4C59;
       display: flex;
       text-align: center; }
+      @media (max-width: 1150px) {
+        .container .description-counter {
+          font-size: 3rem; } }
+      @media (max-width: 1050px) {
+        .container .description-counter {
+          font-size: 2.5rem; } }
+      @media (max-width: 1000px) {
+        .container .description-counter {
+          font-size: 3rem; } }
+      @media (max-width: 560px) {
+        .container .description-counter {
+          font-size: 2.5rem; } }
     .container .description p {
       font-weight: 400;
       font-size: 0.87rem;
       color: #9C9AB6; }
+      @media (max-width: 1150px) {
+        .container .description p {
+          font-size: .70rem; } }
+      @media (max-width: 560px) {
+        .container .description p {
+          font-size: .60rem; } }
 
 .modal-overlay {
   width: 100%;
@@ -149,6 +183,17 @@ button.open-modal:active {
   #form form .input-group.actions button.save,
   #form form .input-group.actions button#reset {
     width: 48%; }
+
+@media (max-width: 1000px) {
+  .rocket {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 1rem; } }
+
+@media (max-width: 1000px) {
+  .rocket img {
+    width: 50%; } }
 
 .rocket.active {
   animation: takeoff-rocket 10s; }

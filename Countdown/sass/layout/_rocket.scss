@@ -1,3 +1,17 @@
+.rocket {
+  @include responsive(sm) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 1rem;
+  }
+
+  img {
+    @include responsive(sm) {
+      width: 50%;
+    }
+  }
+}
 .rocket.active {
   animation: takeoff-rocket 10s;
 }

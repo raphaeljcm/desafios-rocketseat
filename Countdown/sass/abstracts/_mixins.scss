@@ -13,19 +13,19 @@
   }
 
   @if($breakpoint == lg) {
-    @media(max-width: 1200px) {
+    @media(max-width: 1150px) {
       @content;
     }
   }
 
   @if($breakpoint == md) {
-    @media(max-width: 1000px) {
+    @media(max-width: 1050px) {
       @content;
     }
   }
 
   @if($breakpoint == sm) {
-    @media(max-width: 760px) {
+    @media(max-width: 1000px) {
       @content;
     }
   }

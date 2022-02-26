@@ -16,10 +16,11 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
+  overflow: hidden;
 
   img {
     align-self: flex-start;
+    width: 100%;
   }
 }
 

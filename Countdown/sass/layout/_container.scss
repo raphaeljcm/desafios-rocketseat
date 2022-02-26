@@ -4,6 +4,10 @@
   align-items: center;
   width: 100vw;
 
+  @include responsive(lg) {
+    width: 90vw;
+  }
+
   .description {
     display: flex;
     flex-direction: column;
@@ -15,6 +19,22 @@
       font-size: size(lg);
       color: color(purple);
       letter-spacing: .105em;
+
+      @include responsive(lg) {
+        font-size: 1.62rem;
+      }
+
+      @include responsive(md) {
+        font-size: 1.40rem;
+      }
+
+      @include responsive(sm) {
+        font-size: 1.62rem;
+      }
+
+      @include responsive(xm) {
+        font-size: 1.30rem;
+      }
     }
 
     &-counter {
@@ -22,12 +42,36 @@
       color: color(black);
       display: flex;
       text-align: center;
+
+      @include responsive(lg) {
+        font-size: 3rem;
+      }
+
+      @include responsive(md) {
+        font-size: 2.5rem;
+      }
+
+      @include responsive(sm) {
+        font-size: 3rem;
+      }
+
+      @include responsive(xm) {
+        font-size: 2.5rem;
+      }
     }
 
     p {
       font-weight: 400;
       font-size: size(sm);
       color: color(text-color);
+
+      @include responsive(lg) {
+        font-size: .70rem;
+      }
+
+      @include responsive(xm) {
+        font-size: .60rem;
+      }
     }
   }
 }
