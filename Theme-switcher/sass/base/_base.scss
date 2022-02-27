@@ -1,0 +1,27 @@
+// RESET
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 1s;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  @include flexPosition(row, center, center);
+}
+
+a, li, ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  width: 95px;
+}

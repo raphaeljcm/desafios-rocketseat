@@ -1,0 +1,24 @@
+.wrapper {
+  width: 14.75rem;
+  height: 6.37rem;
+  background-color: color(label);
+  border-radius: 3.75rem;
+  padding: .5rem;
+  
+  @include flexPosition(row, center, space-between);
+  position: relative;
+  
+  .ball {
+    position: absolute;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    background-color: color(light);
+    cursor: pointer;
+    transition: transform 1s;
+  }
+
+  .ball.moon {
+    transform: translateX(8.3rem);
+  }
+}

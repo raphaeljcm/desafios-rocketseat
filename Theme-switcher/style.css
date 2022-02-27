@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 1s; }
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+a, li, ul {
+  list-style: none;
+  text-decoration: none; }
+
+img {
+  width: 95px; }
+
+.wrapper {
+  width: 14.75rem;
+  height: 6.37rem;
+  background-color: #111;
+  border-radius: 3.75rem;
+  padding: .5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; }
+  .wrapper .ball {
+    position: absolute;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    background-color: #F1F1F1;
+    cursor: pointer;
+    transition: transform 1s; }
+  .wrapper .ball.moon {
+    transform: translateX(8.3rem); }

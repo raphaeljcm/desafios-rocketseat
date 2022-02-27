@@ -1,0 +1,9 @@
+$colors: (
+  dark: #292C35,
+	light: #F1F1F1,
+	label: #111,
+);
+
+@function color($color-name) {
+  @return map-get($map: $colors, $key: $color-name);
+}
